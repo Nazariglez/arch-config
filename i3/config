@@ -209,3 +209,4 @@ hide_edge_borders both
 
 # window specifics
 for_window [class="Spotify"] move container to workspace $ws10
+assign [class="discord"] $ws9

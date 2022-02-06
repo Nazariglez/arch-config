@@ -61,7 +61,7 @@ font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 modules-left = i3 
 modules-center = xwindow
-modules-right = nvidia_info memory cpu temperature date pulseaudio powermenu
+modules-right = nvidia_info memory cpu temperature date pulseaudio-control powermenu
 
 tray-position = right
 tray-padding = 2
@@ -179,7 +179,7 @@ ws-icon-5 = 5;5
 ws-icon-6 = 6;6
 ws-icon-7 = 7;7
 ws-icon-8 = 8;8
-ws-icon-9 = 9;9
+ws-icon-9 = 9;
 ; ws-icon-default = %index%
 
 [module/cpu]
@@ -251,6 +251,24 @@ format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
 label = %date% %time%
+
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+format-underline = ${colors.cyan}
+label-padding = 2
+label-foreground = ${colors.foreground}
+
+# Icons mixed from Font Awesome 5 and Material Icons
+# You can copy-paste your options for each possible action, which is more
+# trouble-free but repetitive, or apply only the relevant ones (for example
+# --sink-blacklist is only needed for next-sink).
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:  Headphones" listen
+click-right = exec pavucontrol &
+click-left = pulseaudio-control togmute
+click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+scroll-up = pulseaudio-control --volume-max 130 up
+scroll-down = pulseaudio-control --volume-max 130 down
 
 [module/pulseaudio]
 type = internal/pulseaudio
