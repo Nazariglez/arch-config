@@ -55,13 +55,13 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
-font-5 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-3 = "Font Awesome 6 Free:style=Regular:pixelsize=10;1"
+font-4 = "Font Awesome 6 Free:style=Solid:pixelsize=10;1"
+font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = i3 
 modules-center = xwindow
-modules-right = nvidia_info memory cpu temperature date pulseaudio-control powermenu
+modules-right = nvidia_info memory cpu temperature pulseaudio-control date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -255,9 +255,10 @@ label = %date% %time%
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = ${colors.cyan}
+format-underline = $#0a6cf5 
+#${colors.cyan}
 label-padding = 2
-label-foreground = ${colors.foreground}
+# label-foreground = ${colors.foreground}
 
 # Icons mixed from Font Awesome 5 and Material Icons
 # You can copy-paste your options for each possible action, which is more
