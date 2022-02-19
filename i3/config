@@ -210,3 +210,5 @@ for_window [class="Spotify"] move container to workspace $ws10
 assign [class="discord"] $ws9
 assign [class="Slack"] $ws9
 assign [class="obs"] $ws8
+for_window [class="unityhub"] floating enable
+for_window [title="Unity$"] floating enable
