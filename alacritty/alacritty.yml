@@ -51,3 +51,4 @@ colors:
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+  - { key: K, mods: Control, chars: "\x0c" }
