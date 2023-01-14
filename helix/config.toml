@@ -4,6 +4,7 @@ theme = "naz"
 line-number = "relative"
 auto-save = true
 color-modes = true
+# bufferline = "multiple"
 
 [editor.cursor-shape]
 insert = "bar"

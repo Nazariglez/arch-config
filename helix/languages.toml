@@ -1,0 +1,7 @@
+[[language]]
+name = "rust"
+
+[language.config]
+procMacro = { enable = true }
+# checkOnSave = { command = "check" } 
+cargo = { features = "all" }
