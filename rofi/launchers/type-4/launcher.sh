@@ -13,9 +13,10 @@
 dir="$HOME/.config/rofi/launchers/type-4"
 theme='style-4'
 mode=$1
+dpi=$2
 
 ## Run
 rofi \
     -modi $mode,run \
-    -show $mode \
+    -show $mode -dpi $dpi \
     -theme ${dir}/${theme}.rasi
