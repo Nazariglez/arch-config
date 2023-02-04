@@ -28,6 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
+enable-ipc = true
 monitor = "${env:MONITOR:}"
 monitor-strict = true
 override-redirect = true
@@ -72,7 +73,7 @@ tray-maxsize = 25
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-wm-restack = i3
+; wm-restack = i3
 
 ;override-redirect = true
 

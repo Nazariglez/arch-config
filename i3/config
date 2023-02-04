@@ -96,7 +96,8 @@ bindsym $mod+s split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# bindsym $mod+f fullscreen toggle
+bindsym $mod+f exec --no-startup-id $HOME/.config/i3/fullscreen.sh
 
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
@@ -107,7 +108,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-# bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
