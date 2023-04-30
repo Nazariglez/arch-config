@@ -23,14 +23,15 @@ window:
     x: 5
     y: 5
 
-alt_send_esc: false
+
+option: false
 
 shell:
-  program: /bin/bash
+  program: /bin/zsh
   args:
     - -l
     - -c
-    - "tmux attach || tmux"
+    - "tmux"
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
