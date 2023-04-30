@@ -76,6 +76,9 @@ pcall(function()
             enable = true,
             command = "clippy",
           },
+          cargo = {
+            features = "all"
+          }
         },
       },
     },
