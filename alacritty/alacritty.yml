@@ -23,9 +23,6 @@ window:
     x: 5
     y: 5
 
-
-option: false
-
 shell:
   program: /bin/zsh
   args:
