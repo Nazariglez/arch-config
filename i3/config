@@ -258,6 +258,8 @@ assign [class="obs"] $ws8
 for_window [class="unityhub"] floating enable
 for_window [title="Unity$"] floating enable
 for_window [title="Notan"] floating enable
+for_window [instance="Godot_Editor"] floating disable
+for_window [instance="Godot_Engine"] floating enable
 
 mode "pass-through" {
     bindsym Escape mode "default"
